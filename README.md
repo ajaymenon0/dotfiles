@@ -7,3 +7,9 @@ Things to Install otherwise : (need to write scripts for these in the future)
 - NERDtree
 - ctrlP
 - iTerm2
+- vim-twig
+- vim-sensible
+- vim-fugitive
+- vim-javascript
+- vim jsx
+- jshint2.vim

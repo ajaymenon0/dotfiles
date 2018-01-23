@@ -1,0 +1,19 @@
+#! /bin/bash
+
+which -s brew
+if [[ $? != 0 ]] ; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+  brew update
+fi
+brew install ack
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cp ./.zshrc ~/.zshrc
+cp ./.bash_profile ~/.bash_profile
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+cp ./.vimrc ~/.vimrc
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp
+git clone https://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
+git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
