@@ -10,3 +10,4 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 autocmd vimenter * NERDTree
+let NERDTreeShowHidden=1
