@@ -70,7 +70,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-. /usr/local/etc/profile.d/z.sh
+. /Users/apple/Work/z/z.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -105,7 +105,17 @@ alias pam="php artisan migrate"
 alias ved="vim ~/.vimrc"
 alias zed="vim ~/.zshrc"
 alias zsrc="source ~/.zshrc" 
+alias gco="git commit"
+alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+alias nvmset="nvm use \$(head -n 1 .nvmrc)"
+alias runquint="npm i && gulp serve"
+alias curlhead="curl -svo /dev/null"
+alias curlqt="curl -svo /dev/null -H 'QT-Debug: 1'"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
