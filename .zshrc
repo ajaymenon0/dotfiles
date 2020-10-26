@@ -112,6 +112,12 @@ alias nvmset="nvm use \$(head -n 1 .nvmrc)"
 alias runquint="npm i && gulp serve"
 alias curlhead="curl -svo /dev/null"
 alias curlqt="curl -svo /dev/null -H 'QT-Debug: 1'"
+alias gst="git status"
+alias gch="git checkout"
+alias kill3k="kill -9 $(lsof -ti :3000)"
+alias kgp="kubectl get pods"
+alias klogs="kubectl logs -f"
+alias kl="kubectl"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
